@@ -28,7 +28,7 @@ jobs:
       pages: write
       id-token: write
     environment:
-      name: Documentation
+      name: gh-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: deploy to GitHub Pages
